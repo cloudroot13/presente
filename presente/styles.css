@@ -1,0 +1,111 @@
+/* Estilos gerais */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #ffe0eb, #ffd6e8);
+  overflow-x: hidden;
+  color: #d6336c;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 40px;
+  color: #d6336c;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.intro p {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin: 20px;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+/* Galeria */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.photo-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.photo-block img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border: 3px solid #fff;
+}
+
+.phrase {
+  font-size: 1.1em;
+  color: #b4004e;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Player Spotify */
+.spotify-player {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  font-size: 1.1em;
+  padding: 30px;
+  color: #b4004e;
+}
+
+/* Animações */
+.heart, .balloon {
+  position: fixed;
+  bottom: -10px;
+  font-size: 24px;
+  animation: float 10s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-110vh) rotate(720deg); opacity: 0; }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+  .photo-block img {
+    width: 80%;
+    height: auto;
+  }
+  .phrase {
+    font-size: 1em;
+    max-width: 90%;
+  }
+  iframe {
+    width: 90%;
+  }
+}
